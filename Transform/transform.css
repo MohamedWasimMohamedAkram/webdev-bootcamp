@@ -1,0 +1,35 @@
+h1 {
+  width: 300px;
+  font-family: "Courier New", Courier, monospace;
+  border: 5px solid gray;
+  color: #f3ffbd;
+  background-color: #ff1654;
+  text-align: center;
+  padding: 0.7em;
+  margin: 20px auto;
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+h1:nth-of-type(2n) {
+  background-color: #247ba0;
+}
+
+h1:nth-last-of-type(3n) {
+  background-color: #70c1b3;
+  transform: translateX(200px);
+}
+
+h1:nth-last-of-type(4n) {
+  background-color: #b2dbbf;
+  transform: scale(0.5);
+}
+
+section:first-of-type h1:nth-of-type(1) {
+  transform-origin: bottom right;
+  transform: rotate(45deg);
+}
+
+section:nth-of-type(2) {
+  transform: scale(0.5) translateX(500px);
+}

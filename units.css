@@ -1,0 +1,38 @@
+/* body has a margin set to an amount when you start */
+body {
+  margin: 0;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+}
+
+h1 {
+  /* Padding is the spacing between element and border */
+  padding-left: 10px;
+  /* top | right | bottom | left */
+  padding: 5px 10px 5px 10px;
+  /* margin is the space on the outside (like between 2 different elements) */
+  margin-bottom: 50px;
+}
+
+#one {
+  /* Need to set all 3 styles to see border */
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  /* This means that the width of the box is including the border */
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+#two {
+  border: 3px blue dotted;
+}
+
+#three {
+  border: 10px dashed red;
+  box-sizing: border-box;
+}

@@ -1,0 +1,40 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 2px solid yellow;
+  display: inline-block;
+  margin: 10px;
+}
+
+#middle {
+  background-color: grey;
+}
+
+/* This is the default positioning */
+#static #middle {
+  position: static;
+}
+
+/* This allows for us to use top left right bottom which offsets it according to the top bottom etc. values */
+#relative #middle {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+/* Removes it from the document flow so doesnt take up any space */
+/* If its parent is positioned to anything other than static, it is positioned inside the parent
+Otherwise, it is positioned in main parent */
+
+#absolute #middle {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+}
+
+#fixed #middle {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

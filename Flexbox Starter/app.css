@@ -1,0 +1,43 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex;
+  flex-direction: row;
+  /* Justify content determines how the elements are setup in the main axis */
+  justify-content: center;
+  /* Align Items determines how the elements are setup in the cross axis */
+  align-items: center;
+  /* flex-wrap wrap-reverse reverses the cross axis */
+
+  /* align content is used when there is more than one row */
+  /* space between rows or columns (cross axis) */
+}
+
+#container div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  flex-grow: 1;
+  /* flex-basis is the initial size according to main axis */
+
+  /* align self is used for individual item to change across cross axis */
+}
+
+#container div:nth-of-type(4) {
+  width: 200px;
+  height: 200px;
+  /* flex-grow takes up the space according to the value eg. if it is 1 and another is 2, the 2 will take 2 times the space (if available) */
+  flex-grow: 2;
+  /* flex-shrink is similar where they are smaller like flex-grow */
+  flex-shrink: 3;
+  /* flex: flex grow | flex shrink | flex basis */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="google.com">
+      <p>
+        <label for="username">Enter Username: </label>
+        <!-- name is the value that is sent to the server -->
+        <input
+          type="text"
+          name=""
+          id="username"
+          placeholder="Enter Username"
+          name="username"
+        />
+      </p>
+
+      <p>
+        <label for="color">Choose your color:</label>
+        <input type="color" name="" id="color" name="color" />
+      </p>
+      <button type="button">Does Not Submit</button>
+      <button>Submits Form</button>
+    </form>
+
+    <h2>Hijacking Searches</h2>
+    <form action="https://www.reddit.com/search">
+      <label for="q">Enter Search: </label>
+      <input type="text" name="q" />
+      <button>Search Reddit</button>
+    </form>
+
+    <form action="https://www.google.com/search">
+      <label for="q">Enter Search: </label>
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+      <label for="q">Enter Search: </label>
+      <input type="text" name="search_query" />
+      <button>Search YouTube</button>
+    </form>
+
+    <form action="">
+      <input type="checkbox" name="gamer" id="gamer" />
+      <label for="gamer">Gamer</label>
+
+      <input type="checkbox" name="non-gamer" id="non-gamer" />
+      <label for="non-gamer">Non-Gamer</label>
+    </form>
+
+    <form action="">
+      <label for="red">Red</label>
+      <input type="radio" name="color" id="red" value="red" />
+      <label for="blue">Blue</label>
+      <input type="radio" name="color" id="blue" value="blue" />
+      <label for="Green">Green</label>
+      <input type="radio" name="color" id="green" value="green" />
+      <button>Submit</button>
+    </form>
+
+    <form action="">
+      <label for="teams">Select your team</label>
+      <select name="teams" id="teams-select">
+        <option value="man-city">Manchester City</option>
+        <option value="real-madrid">Real Madrid</option>
+        <option value="barcelona">FC Barcelona</option>
+      </select>
+    </form>
+  </body>
+</html>

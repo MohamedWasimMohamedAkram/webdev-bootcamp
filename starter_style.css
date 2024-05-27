@@ -1,0 +1,73 @@
+/* Descendant Selector */
+/* This picks every anchor inside class post */
+.post a {
+  color: green;
+}
+/* This picks every anchor inside footer */
+footer a {
+  color: red;
+}
+/* Descendant Selector */
+
+/* Adjacent Selector */
+/* This picks every button that comes after an h2 */
+h2 + button {
+  background-color: yellow;
+}
+/* Adjacent Selector */
+
+/* Direct Child - Should be directly nested below */
+/* This picks every span that is nested one level below section */
+section > span {
+  color: brown;
+}
+
+/* Attribute Selector*/
+input[type="password"] {
+  background-color: aquamarine;
+}
+
+section[class="post"] {
+  background-color: lightcoral;
+}
+
+/* This selects a with href that contains "pies". The * means it contains */
+a[href*="pup"] {
+  font-size: 45px;
+}
+/* This selects a with href that ends with "tact". The $ means it ends with */
+a[href$="tact"] {
+  font-size: 10px;
+}
+/* Attribute Selector*/
+
+/* Pseudo Classes */
+.post a:hover {
+  color: orange;
+}
+/* Active is when you click but not release*/
+.post a:active {
+  color: red;
+}
+/* This picks the 3rd .post*/
+.post:nth-of-type(3) {
+  background-color: aquamarine;
+}
+/* This picks every 3rd .post*/
+.post:nth-of-type(3n) {
+  background-color: aquamarine;
+}
+/* Pseudo Classes */
+
+/* Pseudo Elements*/
+h2::first-letter {
+  font-size: 40px;
+}
+
+h2::selection {
+  background-color: orange;
+}
+/* Pseudo Elements*/
+
+/* Inline Syles (don't use) > ID > Class > Element */
+/* Some elements don't inherit so you can set their style to inherit eg. color: inherit; */
