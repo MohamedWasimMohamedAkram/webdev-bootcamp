@@ -3,11 +3,11 @@
 
 Welcome to the Web Development Bootcamp repository! This is the central hub for assignments and projects to help you on your journey to becoming a web developer.
 
-# The Complete Web Development Bootcamp 2021
+# The Complete Web Development Bootcamp 2024
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Welcome to the Complete Web Development Bootcamp 2021 repository! This comprehensive course, taught by Colt Steele, will equip you with the skills and knowledge to become a full-stack web developer.
+Welcome to the Complete Web Development Bootcamp 2024 repository! This comprehensive course, taught by Colt Steele, will equip you with the skills and knowledge to become a full-stack web developer.
 
 ### 📖 Course Description
 
