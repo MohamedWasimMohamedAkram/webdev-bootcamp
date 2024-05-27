@@ -9,10 +9,6 @@ Welcome to the Web Development Bootcamp repository! This is the central hub for 
 
 Welcome to the Complete Web Development Bootcamp 2024 repository! This comprehensive course, taught by Colt Steele, will equip you with the skills and knowledge to become a full-stack web developer.
 
-### 📖 Course Description
-
-This bootcamp is your one-stop shop for mastering modern web development. You'll dive deep into the core technologies (HTML, CSS, and JavaScript), build real-world projects, and learn best practices for creating responsive, secure, and beautiful websites and applications.
-
 ### 📑 Curriculum
 
 1. **Front-End Foundations:**
