@@ -113,3 +113,119 @@ function yell(msg) {
     console.log("Please pass a string next time");
   }
 }
+
+//forEach - Do a specific function for each element in an array
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+nums.forEach(function (el) {
+  console.log(el);
+});
+
+const movies = [
+  {
+    title: "Godzilla",
+    score: 90,
+  },
+  {
+    title: "Parasite",
+    score: 95,
+  },
+  {
+    title: "Monkey Man",
+    score: 92,
+  },
+  {
+    title: "Bad Boys",
+    score: 94,
+  },
+];
+
+movies.forEach(function (movie) {
+  console.log(`${movie.title} - ${movie.score}/100`);
+});
+
+//map - Creates a NEW ARRAY with the results of calling a callback on every element in the array. Map from one state to another. Used to modify the array and make it into a new array
+const doubles = nums.map(function (num) {
+  return num * 2;
+});
+
+const titles = movies.map(function (movie) {
+  return movie.title;
+});
+
+//arrow function - no internet explorer support
+const squares = (x) => {
+  return x * x;
+};
+//Without params
+const rollDie = () => {
+  return Math.floor(Math.random() * 6) + 1;
+};
+//even more compact
+const rollDieCompact = () => Math.floor(Math.random() * 6) + 1;
+
+const squaresCompact = (x) => x * x;
+
+const movieScore = movies.map(
+  (movie) => `${movie.title} - ${movie.score / 10}`
+);
+console.log("Hello");
+//setTimeout and setInterval
+setTimeout(() => {
+  console.log("Are you still there?");
+}, 3000); //Calls function after 3000ms
+
+const id = setInterval(() => {
+  console.log(Math.random());
+}, 2000); //Calls function every 2000ms
+clearInterval(id); //stops the interval function based on the ID you pass
+
+//filter method - creates a NEW ARRAY with all the elements that pass the test implemented by the provided function
+const filtered = nums.filter((n) => {
+  return n < 5;
+});
+
+const filterMovies = movies.filter((m) => m.score > 80);
+
+const goodTitles = movies.filter((m) => m.score > 80).map((m) => m.title);
+
+//some and every method - returns boolean
+const exams = [80, 95, 55, 100, 49, 32, 87, 69, 75, 72];
+
+const allPass = exams.every((e) => e > 70);
+const somePass = exams.some((e) => e > 70);
+
+//reduce - executes a reducer function on each element of the array resulting in a single value
+
+const prices = [9.99, 1.5, 19.99, 49.99, 30.5];
+
+const total = prices.reduce((total, price) => {
+  return total + price;
+});
+
+//This gives total an initial value to begin with
+const totalWithInitial = prices.reduce((total, price) => {
+  return total + price;
+}, 100);
+
+//THis is the same as ->
+let sum = 0;
+for (price of prices) {
+  sum = sum + price;
+}
+
+const maxPrice = prices.reduce((max, price) => {
+  if (price > max) {
+    return price;
+  }
+  return max;
+});
+
+//arrow function uses `this` in a different way
+const person = {
+  firstName: "Viggo",
+  lastName: "Mortensen",
+  //This doesn't refer to the first and lastName from object but instead to window
+  fullName: () => {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
