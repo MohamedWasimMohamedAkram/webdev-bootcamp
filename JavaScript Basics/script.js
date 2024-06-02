@@ -229,3 +229,63 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
 };
+
+//Default Parameters
+function rollDieDefaultParam(nums = 6) {
+  return Math.floor(Math.random() * nums) + 1;
+}
+
+//Spread in Function Calls
+//functions like Math.max(23,2443) which takes any number of params
+console.log(...nums); //This spreads the array and prints each number out
+//You can do this with all iterables like string too
+
+const cats = ["British", "Egyptian", "Himalayan"];
+const dogs = ["Labrador", "Pitbull", "Pug", "K9"];
+
+const catsAndDogs = [...cats, ...dogs];
+
+//Spread in Object Literals
+const feline = { legs: 4, family: "Felidae" };
+const canine = { isFurry: true, family: "Caninae" };
+
+const catDog = { ...feline, ...canine }; //Gets overwritten by last param
+
+const addInfo = { ...feline, color: "brown" };
+
+//Rest - looks like spread but it's not
+// function sumArg() {
+//   console.log(arguments);
+// }
+
+//Rest makes args into arrays
+function sumArg(...nums) {
+  console.log(nums);
+}
+
+//Destructuring arrays
+const scores = [93232, 89342, 88355, 77393, 99131, 54544];
+
+const [gold, silver, ...everythingElse] = scores;
+
+//Destructuring Objects
+const user = {
+  email: "tester@gmail.com",
+  password: "qkdfd94fd",
+  firstName: "Tester",
+  lastName: "Master",
+  born: 1960,
+  died: 2010,
+  city: "New York",
+};
+
+const { email, city, password } = user;
+//This renames the variable orignal:renamed
+const { died: death } = user;
+//This sets a value
+const { notThere = "I made this now" } = user;
+
+//Destructuring Params
+function fullNameMethod({ firstName, lastName }) {
+  return `${firstName} ${lastName}`;
+}
