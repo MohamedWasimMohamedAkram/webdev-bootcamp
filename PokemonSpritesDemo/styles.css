@@ -1,0 +1,11 @@
+.pokemon {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+.pokemon img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
