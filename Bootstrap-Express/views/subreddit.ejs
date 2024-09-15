@@ -1,0 +1,18 @@
+<!-- This is a way to include duplicated elements - partials -->
+<%- include('partials/head')%> <%- include('partials/navbar')%>
+<body>
+  <div class="container">
+    <h1><%= name %> Subreddit</h1>
+    <h2>Subscribers: <span><%= subscribers %></span></h2>
+    <p><%= description %></p>
+    <hr />
+    <%for(let post of posts){%>
+    <article>
+      <h2><%= post.title %> - <%= post.author %></h2>
+      <%if(post.img){%>
+      <img src="<%= post.img %>" alt="" />
+      <%}%>
+    </article>
+    <%}%>
+  </div>
+</body>
